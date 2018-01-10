@@ -2,6 +2,7 @@ package com.knoldus
 
 object Application extends App{
   val app = new Operations
+
   val element1 = 2
   val element2 = 5
   val element3 = 4
@@ -18,27 +19,19 @@ object Application extends App{
   val inputSide2 = 5
   val shape = "rectangle"
 
-  println(app.addTwoLists(inputList1,inputList2))
+  print(s"${app.addTwoLists(inputList1,inputList2)}\n")
 
-  println(app.printFibonacciSeries(inputNumber))
+  print(s"${app.printFibonacciSeries(inputNumber)}\n")
 
-  /*if(app.calculateArea(shape,inputSide1,inputSide2)== -1)
-    {
-      println(s"Area not defined for $shape")
-    }
-  else
-  {
-    println(s"Area = ${app.calculateArea(shape,inputSide1,inputSide2)}")
-  }*/
 
-  //app.calculateArea(shape,inputSide1,inputSide2)
+  print(s"Area of $shape = ${app.calculateArea(shape,inputSide1,inputSide2)}\n")
 
-  println(app.doubleListElements(inputList1))
+  print(s"${app.doubleListElements(inputList1)}\n")
 
-  println(s"kth element is  ${app.findKthElement(2,inputList1)}")
+  print(s"kth element is  ${app.findKthElement(2,inputList1)}\n")
 
-  println(s"Length of list ${app.findLengthOfList(inputList2)}")
+  print(s"Length of list ${app.findLengthOfList(inputList2)}\n")
 
-  println(s"Reverse of list ${app.reverseList(inputList2)}")
+  print(s"Reverse of list ${app.reverseList(inputList2)}\n")
 
 }
